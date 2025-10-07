@@ -1,0 +1,5 @@
+.vscode/
+*.xml
+*.bz2
+extracted
+*.txt
