@@ -5,7 +5,7 @@ from pyvi import ViTokenizer
 from gensim.models import Word2Vec
 
 # path data
-pathdata = './datatrain.txt'
+pathdata = './datatrain2.txt'
 
 def read_data(path):
     traindata = []
@@ -18,5 +18,5 @@ def read_data(path):
 if __name__ == '__main__':
     train_data = read_data(pathdata)
 
-    model = Word2Vec(train_data, vector_size=150, window=10, min_count=2, workers=4, sg=1)
+    model = Word2Vec(train_data, vector_size=100, window=5, min_count=4, workers=4, sg=1)
     model.wv.save("./model/word2vec_skipgram.model")

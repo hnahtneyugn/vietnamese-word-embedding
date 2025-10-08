@@ -4,8 +4,7 @@ from sklearn.decomposition import PCA
 
 import os
 
-model = word2vec.KeyedVectors.load('./model/word2vec_skipgram.model')
-# model = word2vec.KeyedVectors.load('../model/fasttext_gensim.model')
+model = word2vec.KeyedVectors.load('./model/fasttext_gensim.model')
 
 pathfile = './words'
 with open(pathfile, 'r') as f:
